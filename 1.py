@@ -18,3 +18,8 @@ print((np.diff(depth_measurements) > 0).sum())
 
 # Part 2
 
+cumulative = np.cumsum(depth_measurements)
+cumulative[3:] - cumulative[:-3]
+cumulative[3:] = cumulative[3:] - cumulative[:-3]
+
+print((np.diff(cumulative[2:]) > 0).sum())
