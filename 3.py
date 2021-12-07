@@ -1,7 +1,6 @@
 import pandas
 
 filename = "input_3"
-# filename = "sample_input_3"
 
 data = pandas.read_csv(filename, dtype=str, header=None)
 
